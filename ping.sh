@@ -1,7 +1,7 @@
 #!/bin/bash
 #check ip up or down
 echo "Please enter a ip : (*.*.*.*) "
-read x
+read xping
 ping -c 2 -w 1 $x &> /dev/null
 if [ $? -eq 0 ];then
   echo "$x" is up
